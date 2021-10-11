@@ -1,0 +1,10 @@
+{
+	"records": [
+		{
+			"key": "tfplan-functions",
+			"source": "./tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-11OCT/kms-policy-check-sentinel/tfplan-functions.sentinel"
+		}
+	]
+}
