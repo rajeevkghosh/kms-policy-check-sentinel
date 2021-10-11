@@ -1,12 +1,6 @@
 {
 	"records": [
 		{
-			"key": "test/kms-policy-check/location-check-pass/tfplan-functions",
-			"source": "../../tfplan-functions.sentinel",
-			"sourceSum": "",
-			"dest": "/home/rajeevghosh/wells-11OCT/kms-policy-check-sentinel/tfplan-functions.sentinel"
-		},
-		{
 			"key": "test/kms-policy-check/rotation-check-null/tfplan-functions",
 			"source": "../../tfplan-functions.sentinel",
 			"sourceSum": "",
@@ -44,6 +38,12 @@
 		},
 		{
 			"key": "test/kms-policy-check/rotation-check-fail/tfplan-functions",
+			"source": "../../tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/rajeevghosh/wells-11OCT/kms-policy-check-sentinel/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/kms-policy-check/location-check-pass/tfplan-functions",
 			"source": "../../tfplan-functions.sentinel",
 			"sourceSum": "",
 			"dest": "/home/rajeevghosh/wells-11OCT/kms-policy-check-sentinel/tfplan-functions.sentinel"
