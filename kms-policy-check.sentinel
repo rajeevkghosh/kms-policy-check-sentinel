@@ -77,7 +77,7 @@ for allKmsCryptokeySkipInitial as address, rc {
 		} else {
 
 			kms_skip_initial_messages[address] = rc
-			print("kms skip initial version with this " + skip_initial + " value is not allowed")
+			print("kms skip initial version with false value is not allowed")
 
 		}
 	}

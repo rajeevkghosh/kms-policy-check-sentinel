@@ -1,0 +1,37 @@
+id = "run-sHkdtfbmArbL8gHM"
+created_at = "2021-10-11T14:26:34.216Z"
+message = "Triggered via UI"
+commit_sha = "725bc7a655bd22b80f235c2c038d8804125d3f08"
+speculative = false
+is_destroy = false
+refresh = true
+refresh_only = false
+replace_addrs = null
+target_addrs = null
+
+variables = {
+	"access_token": {
+		"category":  "terraform",
+		"sensitive": true,
+	},
+}
+
+organization = {
+	"name": "ashwinknaik",
+}
+
+workspace = {
+	"auto_apply":  false,
+	"created_at":  "2021-10-11T08:06:17.459Z",
+	"description": null,
+	"id":          "ws-Jdti5NoGHQ9YKDPQ",
+	"name":        "kms-policy-check-sentinel",
+	"tags":        [],
+	"vcs_repo": {
+		"branch":             "",
+		"display_identifier": "rajeevkghosh/kms-policy-check-sentinel",
+		"identifier":         "rajeevkghosh/kms-policy-check-sentinel",
+		"ingress_submodules": false,
+	},
+	"working_directory": "",
+}

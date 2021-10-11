@@ -1,0 +1,107 @@
+import "strings"
+import "types"
+
+_modules = {
+	"root": {
+		"data":    {},
+		"modules": {},
+		"outputs": {},
+		"providers": {
+			"google": {
+				"alias": {
+					"": {
+						"config": {
+							"project": "tokyo-nomad-323506",
+						},
+						"references": {
+							"access_token": [
+								"var.access_token",
+							],
+							"project": [],
+						},
+						"version": "",
+					},
+				},
+				"config": {
+					"project": "tokyo-nomad-323506",
+				},
+				"references": {
+					"access_token": [
+						"var.access_token",
+					],
+					"project": [],
+				},
+				"version": "",
+			},
+		},
+		"resources": {
+			"google_kms_crypto_key": {
+				"nav-key1": {
+					"config": {
+						"name":                          "cryopt-key-nav1",
+						"rotation_period":               "7776000s",
+						"skip_initial_version_creation": false,
+					},
+					"provisioners": null,
+					"references": {
+						"key_ring": [
+							"google_kms_key_ring.keyring11.id",
+							"google_kms_key_ring.keyring11",
+						],
+						"name":                          [],
+						"rotation_period":               [],
+						"skip_initial_version_creation": [],
+					},
+				},
+			},
+			"google_kms_key_ring": {
+				"keyring11": {
+					"config": {
+						"location": "us-central1",
+						"name":     "keyring-example",
+					},
+					"provisioners": null,
+					"references": {
+						"location": [],
+						"name":     [],
+					},
+				},
+			},
+		},
+		"variables": {
+			"access_token": {
+				"default":     null,
+				"description": "access token",
+			},
+		},
+	},
+}
+
+module_paths = [
+	[],
+]
+
+module = func(path) {
+	if types.type_of(path) is not "list" {
+		error("expected list, got", types.type_of(path))
+	}
+
+	if length(path) < 1 {
+		return _modules.root
+	}
+
+	addr = []
+	for path as p {
+		append(addr, "module")
+		append(addr, p)
+	}
+
+	return _modules[strings.join(addr, ".")]
+}
+
+data = _modules.root.data
+modules = _modules.root.modules
+providers = _modules.root.providers
+resources = _modules.root.resources
+variables = _modules.root.variables
+outputs = _modules.root.outputs
