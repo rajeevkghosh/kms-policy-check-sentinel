@@ -20,7 +20,7 @@ resource "google_kms_crypto_key" "nav-key1" {
   }
 }
 
-resource "google_kms_crypto_key" "nav-key2" {
+/*resource "google_kms_crypto_key" "nav-key2" {
   name            = "cryopt-key-nav2"
   key_ring        = google_kms_key_ring.keyring11.id
 
@@ -28,6 +28,6 @@ resource "google_kms_crypto_key" "nav-key2" {
   lifecycle {
     prevent_destroy = true
   }
-}
+}*/
 
 
