@@ -12,7 +12,7 @@ resource "google_kms_key_ring" "keyring11" {
 resource "google_kms_crypto_key" "nav-key1" {
   name            = "cryopt-key-nav1"
   key_ring        = google_kms_key_ring.keyring11.id
-  rotation_period = "7776000s"
+  #rotation_period = "7776000s"
   skip_initial_version_creation = true
 
   lifecycle {
